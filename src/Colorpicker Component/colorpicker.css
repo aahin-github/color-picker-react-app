@@ -1,0 +1,73 @@
+:root{
+    --radius:4px;
+    --h2-color:#1DCD9F;
+    --white:#ffffff;
+    --black:#000000;
+    --green:#27ae60;
+    --green-dark:#009347;
+    --violet:#8e44ad;
+    --violet-dark:#732A92;
+    --red:#c0392b;
+    --red-dark:#A11915;
+    --blue:#3498db;
+    --blue-dark:#007EBF;
+}
+.container{
+    background-color: var(--black);
+    padding: 30px 20px;
+    border-radius: var(--radius);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container h2{
+    color: var(--h2-color);
+    padding-bottom: 10px;
+}
+
+.container .color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--white);
+    height: 250px;
+    width: 250px;
+    border-radius: var(--radius);
+    box-shadow: 
+        -4px -4px 5px rgba(0, 0, 0, 0.2),  
+        4px 4px 5px rgba(255, 255, 255, 0.8); 
+}
+.container .color-container , .container label{
+    font-weight: 600;
+}
+.container label{
+    padding-top: 15px;
+}
+.container input[type="color"]{
+    border: none;
+    width: 100px;
+    height: 30px;
+    padding: 4px 8px;
+    border-radius: var(--radius);
+}
+.container button{
+    border: none;
+    font-weight: 600;
+    padding: 4px 18px;
+    border-radius: calc(var(--radius) * 2);
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--white);
+    transition: all .35s;
+    margin-top: 10px;
+}
+.container button:hover{
+    background-color: var(--green-dark);
+}
+.container button:active{
+    transform: translateY(2px);
+    transition: all .35s;
+}
